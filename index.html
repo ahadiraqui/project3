@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calc</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h2>TIP CALCULATOR</h2>
+        </div>
+        <div class="contentbox">
+            
+            <div class="left">
+              <img src="https://www.vegasunzipped.com/wp-content/uploads/2012/11/tips-vegas.jpg" alt="tipimage" >
+            </div>
+            <div class="right">
+                <div class="form">
+                <label for="billamount" id="bill1">Total Bill Amount: </label>
+                <input type="number" id="billamount" min="0" placeholder="Rs" required>
+                </div>
+                <div class="form">
+                 <label for="servicepoint" id="service1">Give Points to Service:</label>
+                 <select id="servicep" required>
+                    <option value="0"
+                                disabled
+                                 selected>
+                                 Your Rating</option> 
+                    <option value="0.3">                             
+                                 5 Star</option>
+                    <option value="0.2">
+                                3 Star</option> 
+                    <option value="0.15">
+                                  2 Star</option> 
+                    <option value="0.1">
+                                  1 Star </option>
+                    <option value="0.05">
+                                0 Star</option>                               
+                                   
+
+                    </options>
+                </select>
+                </div>
+                <div class="form">
+                    <label for="peopleshare" id="share1">How many people share their bill:</label>
+                    <input type="number" id="peopleshare" min="0" value="1" required>
+                </div>
+                <div class="form">
+                    <button type="submit" id="btn">Calculate</button>
+                    <span class="result" id="tip">Tip Amount Rs:
+                      
+                       <span id="result"></span>
+                    </span>
+                </div>
+            </div>
+           
+                
+            </div>
+        </div>
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>
